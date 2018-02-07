@@ -1,88 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en-us">
 
-    <html>
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" type="text/css" href="C:\Users\epha1\Desktop\code\bootstrap-portfolio\assets\reset.css">
+  <link rel="stylesheet" type="text/css" href="C:\Users\epha1\Desktop\code\bootstrap-portfolio\assets\style.css">
+</head>
 
-        <head>
-        
-            <title>Contact</title>
-        
-        <style>
-            ul
-                {
-                    list-style-type: none;
-                    margin: 0;
-                    padding: 0;
-                    overflow: hidden;
-                    border-bottom: solid gray;
-                }
-            .me
-                {
-                    float: left;
-                    color: white;
-                    background-color: #4aaaa5;
-                    font-size: 25px;
-                    height: 40px;
-                    padding: 20px;
-                }
-            li
-                {
-                    float: right;
-                    display: block;
-                    color: #777777;
-                    text-align: center;
-                    padding: 14px 16px;
-                    text-decoration: none;
-                }
-            h1
-                {
-                    color: #4aaaa5;
-                    border-bottom: solid lightgray;
-                }
-            .copyright
-                {
-                    text-align: center;
-                    background-color: #666666;
-                    height: 50px;
-                    border-top: 6px solid #4aaaa5;
-                    padding: 10px;
-                }
+<body>
 
-        </style>
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Elvis Pham</a>
+      <nav class="tabs">
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-        </head>
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
 
-    <body>
-
-        <ul>
-            <li class="me">Elvis Pham</li>
-            <li class="about">About</li>
-            <li class="portfolio">Portfolio</li>
-            <li class="contact">Contact</li>
-        </ul>
-
-        <h1>Contact</h1>
-
-        <form class="contact">
-            <label for="name">Name</label>
-            <input type="text" class="name" name="name" placeholder="Your Name">
-
-            <label for="email">Email</label>
-            <input type="text" class="email" name="email" placeholder="Your Email">
-
-            <label for="message">Message</label>
-            <input type="text" class="message" name="message">
-
-            <input type="submit" value="Submit">
-
-
+      <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="name" placeholder="Full name..">
+      
+          <label for="email">Email</label>
+          <input type="text" id="lname" name="email" placeholder="Your Email">
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
         </form>
-    
-        <footer>
+      </div>
 
-            <p class="copyright">©Copyright 2018 Elvis Pham</p>
-    
-        </footer>
+    </section>
 
-    </body>
+    <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Connect With Me</h3>
+            </div>
+            <div class="panel-body">
+                    <a href="https://github.com/">
+                        <img src="C:\Users\epha1\Desktop\code\bootstrap-portfolio\images\github.png" class="social" alt="Github">
+                        </a>
+        
+                        <a href="https://www.linkedin.com/uas/login">
+                        <img src="C:\Users\epha1\Desktop\code\bootstrap-portfolio\images\linkedin.png" class="social" alt="LinkedIn">
+                        </a>
+        
+                        <a href="https://stackoverflow.com/">
+                        <img src="C:\Users\epha1\Desktop\code\bootstrap-portfolio\images\stackOverflow.png" class="social" alt="Stack Overflow">
+                        </a>  
+            </div>
+          </div>
 
-    </html>
+  <footer>
+    <div class="container" id="footer">
+      Copyright &copy; 
+    </div>
+  </footer>
+</body>
+
+</html>
